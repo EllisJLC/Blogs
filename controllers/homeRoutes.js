@@ -13,9 +13,6 @@ router.get('/', async (req, res) => {
         },
       ],
     });
-
-    console.log(blogData);
-    console.log('-------------------------------------');
     // Serialize data so the template can read it
     const blogs = blogData.map((blogs) => blogs.get({ plain: true }));
     console.log(blogs);
